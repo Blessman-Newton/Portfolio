@@ -160,7 +160,7 @@ I would like to thank Microverse for the best technical training they are taking
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Blessman-Newton/Portfolio/blob/add_moblie_first/LICENSE.md) licensed.
+This project is [MIT](https://github.com/Blessman-Newton/Portfolio/blob/add_moblie_first/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
