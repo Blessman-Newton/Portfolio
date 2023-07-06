@@ -59,7 +59,12 @@
 
 - **[Home Page]**
 - **[Navigation Bar]**
-- **[key_feature_3]**
+- **[About-me section which includes  information about Languages, frameworks, skills and resume]**
+- **[Work section which includes my recent project]**
+- **[footer section showing usful links]**
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +88,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   Clone this repository to your desired folder
-  - git clone https://github.com/Blessman-Newton/Porfolio.git
+  - git clone https://github.com/Blessman-Newton/Microverse_Porfolio.git
 
 ### Install
 
@@ -116,18 +121,15 @@ You can deploy this project using by transfering files in your local repository 
 
 👤 **Author1**
 
-- GitHub: [@Github](https://github.com/Blessman-Newton)
-- Twitter: [@twitter](https://twitter.com/blessman_newton)
-- LinkedIn: [@linkedin](https://linkedin.com/in/blessman-newton-a7a80a251)
+- GitHub: [@Blessman Newton](https://github.com/Blessman-Newton)
+- Twitter: [@Blessman Newton](https://twitter.com/blessman_newton)
+- LinkedIn: [Blessman Newton](https://linkedin.com/in/blessman-newton-a7a80a251)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-
-- [ ] **[Section to show my resume]**
-- [ ] **[Section to show languages that I have learned]**
+- [ ] **[implementation of detail modal window]**
 - [ ] **[Contact form to contact me]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,7 +144,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, show me ⭐️⭐️⭐️
+If you like this project, show me 🤝🤝🤝
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,10 +154,6 @@ If you like this project, show me ⭐️⭐️⭐️
 I would like to thank Microverse for the best technical training they are taking me through and the code reviewers for having guided me to produce required results
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
