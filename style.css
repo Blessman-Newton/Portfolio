@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -79,7 +82,7 @@ h1 {
 
 h2 {
   color: #fff5e1;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-weight: 700px;
   line-height: 32px;
@@ -91,6 +94,7 @@ h2 {
 
 .text {
   font-weight: 400px;
+  font-family: 'Poppins', sans-serif;
   line-height: 28px;
   text-align: left;
   font-size: 18px;
