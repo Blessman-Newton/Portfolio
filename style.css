@@ -395,6 +395,7 @@ button:active {
 .list-style li {
   list-style-image: none;
 }
+
 .contact-info {
   text-align: center;
   width: 100%;
@@ -502,4 +503,3 @@ textarea {
   border-radius: 10px;
   background: #0d151e;
 }
-
