@@ -481,3 +481,25 @@ textarea {
   transform: translateY(8px);
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  color: #505f79;
+}
+
+.footer li a i {
+  color: #505f79;
+}
+
+.footer hr {
+  height: 7px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  background: #0d151e;
+}
+
