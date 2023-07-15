@@ -95,7 +95,7 @@ h2 {
 }
 
 .text {
-  font-weight: 400px;
+  font-weight: initial;
   line-height: 28px;
   text-align: left;
   font-family: 'Poppins', sans-serif;
@@ -596,6 +596,11 @@ textarea {
     gap: 20px;
   }
 
+  .work-content p {
+    color: #091e42;
+    font-weight: initial;
+  }
+
   .recent-work h3 {
     color: #000;
     text-align: left;
@@ -653,7 +658,7 @@ textarea {
 
   .recent-hr {
     width: 750px;
-    border: 1.2px solid #21212184;
+    border: 1px solid #091e42;
   }
 
   .first-em {
