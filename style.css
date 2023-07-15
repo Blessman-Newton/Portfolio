@@ -228,6 +228,9 @@ hr {
   cursor: pointer;
   display: flex;
   flex-direction: row;
+}
+
+.btns {
   justify-content: center;
   align-items: center;
 }
@@ -599,6 +602,7 @@ textarea {
   .work-content p {
     color: #091e42;
     font-weight: initial;
+    width: 350px;
   }
 
   .recent-work h3 {
