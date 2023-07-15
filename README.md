@@ -85,7 +85,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   Clone this repository to your desired folder
-  - git clone https://github.com/Blessman-Newton/Microverse_Porfolio.git
+  - git clone https://github.com/Blessman-Newton/Porfolio.git
 
 ### Install
 
