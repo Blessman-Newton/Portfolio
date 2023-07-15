@@ -44,6 +44,22 @@ svg {
   padding: 4px;
 }
 
+.log-anim {
+    animation: logo 0.5s ease-in-out;
+}
+
+@keyframes logo {
+  0%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
 .container {
   background-color: #1c1a19;
   background-image: url("images/Illustration.png");
@@ -229,6 +245,7 @@ hr {
   display: flex;
   flex-direction: row;
 }
+
 
 .btns {
   justify-content: center;
@@ -750,8 +767,14 @@ textarea {
     align-items: flex-start;
   }
 
+  .first {
+    width: 310px;
+    background: #cdd;
+    
+  }
+
   .see-btn button {
-    width: 17.64em;
+    width: 100%;
   }
 
   .input {
