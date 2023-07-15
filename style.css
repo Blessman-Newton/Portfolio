@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -81,7 +84,7 @@ h1 {
 
 h2 {
   color: #fff5e1;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 23px;
   font-weight: 700px;
   line-height: 32px;
@@ -95,6 +98,7 @@ h2 {
   font-weight: 400px;
   line-height: 28px;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: #fff;
   width: 100%;
@@ -336,6 +340,14 @@ button:active {
   gap: 25px;
 }
 
+.about-me h1 {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .about-me p {
   color: #f4f5f7;
   font-family: 'Inter', sans-serif;
@@ -348,7 +360,6 @@ button:active {
 .resume-btn button {
   width: 150px;
   height: 40px;
-  margin-left: 20px;
   margin-bottom: 16rem;
 }
 
@@ -475,16 +486,14 @@ textarea {
   font-weight: 700px;
   font-size: 17px;
   line-height: 24px;
-  width: 150px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-bottom: 40px;
   outline: none;
   border: none;
   color: #fff;
-  background-color: #ff6b00;
+  background: #F55800;
+  width: Hug (122px);
+  height: Hug (48px);
+  padding: 12px;
+  gap: 10px
 }
 
 .footer {
@@ -644,7 +653,7 @@ textarea {
 
   .recent-hr {
     width: 750px;
-    border: 1px solid black;
+    border: 1.2px solid #21212184;
   }
 
   .first-em {
@@ -707,10 +716,15 @@ textarea {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    height: 35em;
   }
 
   .contact-info {
     width: 40%;
+  }
+
+  form {
+    width: 60%;
   }
 
   .contact-info p {
@@ -722,7 +736,7 @@ textarea {
 
   .form-group {
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
   }
