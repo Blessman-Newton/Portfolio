@@ -62,9 +62,10 @@
 - **[About-me section which includes  information about Languages, frameworks, skills and resume]**
 - **[Work section which includes my recent project]**
 - **[footer section showing usful links]**
+- **[Contact form to contact me]**
 
 
-
+<img src="images/readme.png" alt="readmeshot" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,7 +85,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   Clone this repository to your desired folder
-  - git clone https://github.com/Blessman-Newton/Microverse_Porfolio.git
+  - git clone https://github.com/Blessman-Newton/Porfolio.git
 
 ### Install
 
@@ -126,7 +127,7 @@ You can deploy this project using by transfering files in your local repository 
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] **[implementation of detail modal window]**
-- [ ] **[Contact form to contact me]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
