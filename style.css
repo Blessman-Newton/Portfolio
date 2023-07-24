@@ -1228,7 +1228,17 @@ textarea {
     border: 1px solid #d7d7d9;
   }
 
-  
+  .popup-button .popup-btn {
+    margin-top: 18px;
+    background: #FF6B00;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 17px;
+    line-height: 24px;
+    width: 150px;
+  }
 
   .popup-button #lists {
     position: relative;
