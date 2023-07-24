@@ -879,15 +879,19 @@ textarea {
   .hamburger {
     display: block;
   }
+
   .hamburger.active .hamburger-bars:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .hamburger-bars:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .hamburger-bars:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
   }
+
   .navtabs {
     position: fixed;
     top: -100%;
@@ -899,16 +903,19 @@ textarea {
     transition: 0.5s;
     background: #333;
   }
+
   .navtabs.active {
     top: 0;
     margin-top: 28px;
   }
+
   .navtabs li {
     margin: 10px 0;
-    border-bottom: 1px solid #6A6A6A;
+    border-bottom: 1px solid #6a6a6a;
     border-right-width: 30px;
     padding: 8px;
   }
+
   .icons {
     display: none;
     border-bottom: none;
