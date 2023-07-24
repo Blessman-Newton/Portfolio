@@ -341,6 +341,9 @@ view.forEach((element) => element.addEventListener('click', () => {
 
     const close = document.querySelector('#close');
 
-    
+ close.addEventListener('click', () => {
+      body.removeChild(show);
+    });
+  });   
 }));
 // /* ---------------------Windows popup code above----------------------------- */
