@@ -106,7 +106,7 @@ const popup = [
     but also the leap into electronic typesetting, remaining essent`,
     links: ['See live', 'See source'],
     linkImg: ['images/link.png', 'images/Vector.png'],
-    linkSource: ['https://blessman-newton.github.io/Microverse_Portfolio/', 'https://github.com/Blessman-Newton/Microverse_Portfolio'],
+    linkSource: ['https://blessman-newton.github.io/Portfolio/', 'https://github.com/Blessman-Newton/Portfolio'],
 
   },
 ];
@@ -341,9 +341,9 @@ view.forEach((element) => element.addEventListener('click', () => {
 
     const close = document.querySelector('#close');
 
- close.addEventListener('click', () => {
+    close.addEventListener('click', () => {
       body.removeChild(show);
     });
-  });   
+  });
 }));
 // /* ---------------------Windows popup code above----------------------------- */
