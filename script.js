@@ -85,29 +85,112 @@ const portfolio = [
   },
 ];
 
+const descriptions = [
+  {
+    descriptionSub: `Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br><br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+  {
+    descriptionSub: `Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+  {
+    descriptionSub: `Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+  {
+    descriptionSub: `Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+  {
+    descriptionSub: ` Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+  {
+    descriptionSub: ` Lorem Ipsum is 
+    simply dummy text of the printing and
+     typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text
+       ever since the 1500s, when an unknown 
+       printer took a galley of type and 
+       scrambled it 1960s. <br><br>Lorem
+        Ipsum is simply dummy text of the 
+      printing and typesetting industry. Lorem 
+      Ipsum has been the industry's standard dummy
+       text ever since the 1500s, when an unknown 
+       printer took a galley of type and scrambled 
+       it 1960s with the releax map lapora verita.`,
+  },
+];
+
 const popup = [
   {
     title: 'Keeping track of hundreds of components website',
-    titleMob: 'Multi Post Stories',
     button: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/aya.png',
-    imageMob: 'images/snapsmall.png',
+    technologies: ['HTML', 'Boostrap', 'Ruby'],
+
     description: `Lorem Ipsum is simply dummy text of
      the printing and typesetting industry. Lorem Ipsum has been the 
      industry's standard dummy text ever since the 1500s, when an unknown
      make a type specimen book.
        It has survived not only five centuries,
      but also the leap into electronic typesetting, remaining essent`,
-    descriptionMob: `Lorem Ipsum is simply dummy text of
-    the printing and typesetting industry. Lorem Ipsum has been the 
-    industry's standard dummy text ever since the 1500s, when an unknown
-      make a type specimen book.
-      It has survived not only five centuries,
-    but also the leap into electronic typesetting, remaining essent`,
-    links: ['See live', 'See source'],
-    linkImg: ['images/link.png', 'images/Vector.png'],
-    linkSource: ['https://blessman-newton.github.io/Portfolio/', 'https://github.com/Blessman-Newton/Portfolio'],
-
   },
 ];
 // JavaScript arrays containing work section information
@@ -291,59 +374,153 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
 
 /* ---------------------hamburger code above----------------------------- */
 
-/* ---------------------Windows popup code below----------------------------- */
-const body = document.querySelector('body');
-const view = document.querySelectorAll('.view-project');
+// JavaScript: Create a function to generate the projects section dynamically
+function generateProjectsSection(projectsData) {
+  let desktopTemplate = '';
+  let mobileTemplate = '';
 
-view.forEach((element) => element.addEventListener('click', () => {
-  popup.forEach((pop) => {
-    const show = document.createElement('div');
-    const detailPop = document.createElement('div');
-    show.className = 'show';
-    detailPop.className = 'pop';
-    detailPop.innerHTML = `
-                      <div class="popup-header">
-                        <h2 class="desktop" id="desktop">${pop.title}</h2>
-                         <h2 class="mob-title">Multi Post Stories</h2>
-                        <span id="close">&times;</span>
-                      </div>
-                        <div class="popup-button">
-                          <button id="lists">${pop.button[0]}</button>
-                          <button id="lists">${pop.button[1]}</button>
-                          <button id="lists">${pop.button[2]}</button>
-                        </div>
-                      <div class="popup-body">
-                        <img class="desktop" src="${pop.image}" alt="">
-                        <img class="mob" src="${pop.imageMob}" alt="">
-                        <div class="pop-details">
-                          <p>
-                          ${pop.description}
-                          </p>
+  projectsData.forEach((project) => {
+    const technologies = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
+    const desktopTag = `
+      <div class="card">
+        <img class="card-img" src="${project.image}" alt="">
+        <div class="cont">
+          <h2>${project.title}</h2>
+          <p>${project.description}</p>
+          <ul>${technologies}</ul>
+        </div>
+        <div class="card-button">
+          <button type="button" class="view-project">${project.button}</button>
+        </div>
+      </div>
+    `;
+    desktopTemplate += desktopTag;
 
-                          <p class="desktop">
-                          ${pop.descriptionMob}
-                          </p>
-                         
-                          <div class="popup-button">
-                            <button class="popup-btn git"><a href="${pop.linkSource[0]}">${pop.links[0]} <img class="link-img" src="${pop.linkImg[0]}" />
-                            </a></button>
-                            <button class="popup-btn git"><a href="${pop.linkSource[1]}">${pop.links[1]} <img class="link-img" src="${pop.linkImg[1]}" />
-                             </a>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-    
-      `;
-
-    show.appendChild(detailPop);
-    body.appendChild(show);
-
-    const close = document.querySelector('#close');
-
-    close.addEventListener('click', () => {
-      body.removeChild(show);
-    });
+    const mobileTag = `
+      <div class="card">
+        <img class="card-img" src="${project.image}" alt="">
+        <div class="cont">
+          <h2>${project.title}</h2>
+          <p>${project.description}</p>
+          <ul>${technologies}</ul>
+        </div>
+        <div class="card-button">
+          <button type="button" class="view-project">${project.button}</button>
+        </div>
+      </div>
+    `;
+    mobileTemplate += mobileTag;
   });
-}));
-// /* ---------------------Windows popup code above----------------------------- */
+
+  projectData.innerHTML = desktopTemplate;
+  projectsMob.innerHTML = mobileTemplate;
+}
+
+// Call the function passing the projects array to generate the projects section
+generateProjectsSection(projects);
+
+// JavaScript: Implement popup window for both mobile and desktop
+
+const popupContainer = document.getElementById('popupContainer');
+
+// ... (previous code remains unchanged)
+
+// JavaScript: Implement popup window for both mobile and desktop
+// ...
+
+// ... Previous code ...
+
+function createPopup(projectIndex) {
+  const project = projects[projectIndex]; // Get the project using the index
+  const para = descriptions[projectIndex]; // Get the project using the index
+
+  const popupHTML = `
+    <div class="popup">
+    <div class="pop">
+      <div class="popup-header">
+        <h2>${project.title}</h2>
+        <span class="close-popup">&times;</span>
+      </div>
+      <ul id="lists">${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}</ul>
+      <div class="popup-body">
+        <img class="popup-img" src="${project.image}" alt="">
+        <div class="below">
+          <p class="pop-details">${para.descriptionSub}</p>
+          <div class="popup-button">
+            <button class="popup-btn"><a href="${project.liveLink}" target="_blank">See Live</a></button>
+            <button class="popup-btn"><a href="${project.sourceLink}" target="_blank">See Source</a></button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  `;
+
+  return popupHTML;
+}
+
+function createHeroPopup(projectIndex) {
+  const project = popup[projectIndex]; // Get the project using the index
+  const para = descriptions[projectIndex]; // Get the project using the index
+
+  const popupHTML = `
+    <div class="popup">
+    <div class="pop">
+      <div class="popup-header">
+        <h2>${project.title}</h2>
+        <span class="close-popup">&times;</span>
+      </div>
+      <ul id="lists">${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}</ul>
+      <div class="popup-body">
+        <img class="popup-img" src="${project.image}" alt="">
+        <div class="below">
+          <p class="pop-details">${para.descriptionSub}</p>
+          <div class="popup-button">
+            <button class="popup-btn"><a href="${project.liveLink}" target="_blank">See Live</a></button>
+            <button class="popup-btn"><a href="${project.sourceLink}" target="_blank">See Source</a></button>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+  `;
+
+  return popupHTML;
+}
+
+function openPopup(index) {
+  const popup = createPopup(index);
+  popupContainer.innerHTML = popup;
+  popupContainer.classList.add('show-popup');
+}
+
+function openHeroPopup(index) {
+  const heroPop = createHeroPopup(index);
+  popupContainer.innerHTML = heroPop;
+  popupContainer.classList.add('show-popup');
+}
+
+projectData.addEventListener('click', (event) => {
+  if (event.target.classList.contains('view-project')) {
+    const index = Array.from(projectData.querySelectorAll('.view-project')).indexOf(event.target);
+    openPopup(index); // Pass the index of the clicked project
+  }
+});
+
+projectsMob.addEventListener('click', (event) => {
+  if (event.target.classList.contains('view-project')) {
+    const index = Array.from(projectsMob.querySelectorAll('.view-project')).indexOf(event.target);
+    openPopup(index); // Pass the index of the clicked project
+  }
+});
+
+popupContainer.addEventListener('click', (event) => {
+  if (event.target.classList.contains('close-popup')) {
+    popupContainer.innerHTML = '';
+    popupContainer.classList.remove('show-popup');
+  }
+});
+
+// ... Remaining code ...
