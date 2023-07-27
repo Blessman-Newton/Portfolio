@@ -524,3 +524,9 @@ popupContainer.addEventListener('click', (event) => {
 });
 
 // ... Remaining code ...
+heroSection.addEventListener('click', (event) => {
+  if (event.target.classList.contains('view-project')) {
+    const index = Array.from(heroSection.querySelectorAll('.view-project')).indexOf(event.target);
+    openHeroPopup(index); // Pass the index of the clicked project
+  }
+});
