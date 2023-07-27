@@ -1236,7 +1236,16 @@ textarea {
     margin-top: -2px;
   }
 
-
+#lists li {
+    height: 40px;
+    background:
+      linear-gradient(0deg, #fff, #fff),
+      linear-gradient(0deg, #DFE1E6, #DFE1E6);
+    border-radius: 0;
+    outline: none;
+    margin-top: 10px;
+    border: 1px solid #D7D7D9;
+  } 
 
   .popup-button .popup-btn {
     background: #ff6b00;
