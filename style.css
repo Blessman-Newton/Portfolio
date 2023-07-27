@@ -240,11 +240,9 @@ hr {
 #img2 {
   display: none;
 }
-
 .popup-img {
   width: 21.8em;
 }
-
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -671,7 +669,7 @@ textarea {
   padding: 10px;
   border: 1px solid #000;
   outline: none;
-  color: #000;
+  color: #000000;
   height: 40px;
   width: 100%;
   cursor: pointer;
@@ -1190,14 +1188,12 @@ textarea {
     padding: 0 20px;
     background-color: #fff;
   }
-
-  .below {
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
+    .below {
+      height: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   .popup-header {
     display: flex;
     flex-direction: row;
@@ -1236,7 +1232,16 @@ textarea {
     margin-top: -2px;
   }
 
-
+  #lists li {
+    height: 40px;
+    background:
+      linear-gradient(0deg, #fff, #fff),
+      linear-gradient(0deg, #dfe1e6, #dfe1e6);
+    border-radius: 0;
+    outline: none;
+    margin-top: 10px;
+    border: 1px solid #d7d7d9;
+  }
 
   .popup-button .popup-btn {
     background: #ff6b00;
