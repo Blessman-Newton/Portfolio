@@ -240,11 +240,9 @@ hr {
 #img2 {
   display: none;
 }
-
 .popup-img {
   width: 21.8em;
 }
-
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -738,6 +736,20 @@ textarea {
   width: 310px;
 }
 
+.cont ul li {
+  height: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  left: 79px;
+  top: 0;
+  border-radius: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 #work-card-mobile .card-button {
   height: 58px;
   width: 310px;
@@ -880,7 +892,6 @@ textarea {
     width: 310px;
   }
 
-  /*
   .cont ul li {
     height: 40px;
     padding: 10px;
@@ -901,7 +912,7 @@ textarea {
     position: relative;
     display: none;
     bottom: 70px;
-  } */
+  }
 
   .card:hover {
     animation: animate 2s;
@@ -1177,14 +1188,12 @@ textarea {
     padding: 0 20px;
     background-color: #fff;
   }
-
-  .below {
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
+    .below {
+      height: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   .popup-header {
     display: flex;
     flex-direction: row;
@@ -1221,20 +1230,6 @@ textarea {
   .pop-details {
     width: 424px;
     margin-top: -2px;
-  }
-
-  .cont ul li {
-    height: 40px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.24);
-    left: 79px;
-    top: 0;
-    border-radius: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
   }
 
   #lists li {
