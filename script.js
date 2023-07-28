@@ -561,7 +561,7 @@ function handleSubmit(event) {
   const inputValue = emailField.value;
   // Check if the input contains any lowercase letters
   if (/[A-Z]/.test(inputValue)) {
-
+    errorMessage.textContent = 'Please, email field should be in lower-case.';
   } else {
     errorMessage.textContent = ''; // Clear the error message
     // Proceed with form submission
