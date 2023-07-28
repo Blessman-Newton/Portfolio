@@ -551,3 +551,22 @@ heroSection.addEventListener('click', (event) => {
     openHeroPopup(index); // Pass the index of the clicked project
   }
 });
+
+/* ---------------------Form validation code above----------------------------- */
+const form = document.getElementById('myForm');
+function handleSubmit(event) {
+  event.preventDefault(); // Prevents the form from being submitted
+  const emailField = document.getElementById('emailField');
+  const errorMessage = document.getElementById('errorField');
+  const inputValue = emailField.value;
+  // Check if the input contains any lowercase letters
+  if (/[A-Z]/.test(inputValue)) {
+
+  } else {
+    errorMessage.textContent = ''; // Clear the error message
+    // Proceed with form submission
+    form.submit();
+  }
+}
+form.addEventListener('submit', handleSubmit);
+/* ---------------------Form validation code above----------------------------- */
