@@ -6,11 +6,15 @@ const projectsMob = document.querySelector('#work-card-mobile');
 
 const projects = [
   {
-    title: '',
+    title: 'Data Dashboard Healthcare',
     image: 'images/Img Placeholder (6).png',
     description: '',
-    technologies: [],
+    technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -20,7 +24,10 @@ const projects = [
      has been the industry standard.`,
     technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
-
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
   {
     title: 'Website Portfolio',
@@ -33,6 +40,10 @@ const projects = [
      industry's standard.`,
     technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
   {
     title: 'Profesional Art Printing Data',
@@ -42,6 +53,10 @@ const projects = [
     has been the industry standard.`,
     technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -51,6 +66,10 @@ const projects = [
     has been the industry standard.`,
     technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
   {
     title: 'Website Portfolio',
@@ -63,6 +82,10 @@ const projects = [
      industry's standard.`,
     technologies: ['HTML', 'Boostrap', 'Ruby'],
     button: 'See Project',
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
 ];
 
@@ -93,7 +116,7 @@ const descriptions = [
       been the industry's standard dummy text
        ever since the 1500s, when an unknown 
        printer took a galley of type and 
-       scrambled it 1960s. <br><br><br><br>Lorem
+       scrambled it 1960s. <br><br><br>Lorem
         Ipsum is simply dummy text of the 
       printing and typesetting industry. Lorem 
       Ipsum has been the industry's standard dummy
@@ -180,17 +203,20 @@ const descriptions = [
 
 const popup = [
   {
-    title: 'Keeping track of hundreds of components website',
+    title: 'Multi Post Stories',
     button: ['HTML', 'Boostrap', 'Ruby on rails'],
-    image: 'images/aya.png',
+    image: 'images/Img Placeholder.png',
     technologies: ['HTML', 'Boostrap', 'Ruby'],
-
     description: `Lorem Ipsum is simply dummy text of
      the printing and typesetting industry. Lorem Ipsum has been the 
      industry's standard dummy text ever since the 1500s, when an unknown
      make a type specimen book.
        It has survived not only five centuries,
      but also the leap into electronic typesetting, remaining essent`,
+    gitHub: 'images/link.png',
+    goLive: 'images/Vector.png',
+    liveLink: ['https://blessman-newton.github.io/Portfolio/'],
+    sourceLink: ['https://github.com/Blessman-Newton/Portfolio'],
   },
 ];
 // JavaScript arrays containing work section information
@@ -423,12 +449,8 @@ generateProjectsSection(projects);
 
 const popupContainer = document.getElementById('popupContainer');
 
-// ... (previous code remains unchanged)
-
 // JavaScript: Implement popup window for both mobile and desktop
 // ...
-
-// ... Previous code ...
 
 function createPopup(projectIndex) {
   const project = projects[projectIndex]; // Get the project using the index
@@ -447,8 +469,8 @@ function createPopup(projectIndex) {
         <div class="below">
           <p class="pop-details">${para.descriptionSub}</p>
           <div class="popup-button">
-            <button class="popup-btn"><a href="${project.liveLink}" target="_blank">See Live</a></button>
-            <button class="popup-btn"><a href="${project.sourceLink}" target="_blank">See Source</a></button>
+            <button class="popup-btn git"><a href="${project.liveLink}" target="_blank">See Live <img class="link-img" src="${project.gitHub}" /></a></button>
+            <button class="popup-btn git"><a href="${project.sourceLink}" target="_blank">See Source <img class="link-img" src="${project.goLive}" /></a></button>
           </div>
         </div>
       </div>
@@ -477,8 +499,8 @@ function createHeroPopup(projectIndex) {
         <div class="below">
           <p class="pop-details">${para.descriptionSub}</p>
           <div class="popup-button">
-            <button class="popup-btn"><a href="${project.liveLink}" target="_blank">See Live</a></button>
-            <button class="popup-btn"><a href="${project.sourceLink}" target="_blank">See Source</a></button>
+            <button class="popup-btn git"><a href="${project.liveLink}" target="_blank">See Live <img class="link-img" src="${project.gitHub}" /></a></button>
+            <button class="popup-btn git"><a href="${project.sourceLink}" target="_blank">See Source <img class="link-img" src="${project.goLive}" /></a></button>
           </div>
         </div>
       </div>
@@ -523,7 +545,6 @@ popupContainer.addEventListener('click', (event) => {
   }
 });
 
-// ... Remaining code ...
 heroSection.addEventListener('click', (event) => {
   if (event.target.classList.contains('view-project')) {
     const index = Array.from(heroSection.querySelectorAll('.view-project')).indexOf(event.target);

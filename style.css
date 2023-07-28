@@ -240,9 +240,11 @@ hr {
 #img2 {
   display: none;
 }
+
 .popup-img {
   width: 21.8em;
 }
+
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -669,7 +671,7 @@ textarea {
   padding: 10px;
   border: 1px solid #000;
   outline: none;
-  color: #000000;
+  color: #000;
   height: 40px;
   width: 100%;
   cursor: pointer;
@@ -734,20 +736,6 @@ textarea {
   align-content: center;
   height: 410px;
   width: 310px;
-}
-
-.cont ul li {
-  height: 40px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.24);
-  left: 79px;
-  top: 0;
-  border-radius: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 #work-card-mobile .card-button {
@@ -1188,12 +1176,14 @@ textarea {
     padding: 0 20px;
     background-color: #fff;
   }
-    .below {
-      height: 370px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+
+  .below {
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .popup-header {
     display: flex;
     flex-direction: row;
